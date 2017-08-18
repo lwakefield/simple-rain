@@ -516,7 +516,7 @@ var Home = function (_Component) {
 				ref: function ref(c) {
 					return _this2.audio = c;
 				},
-				src: '/assets/0.m4a',
+				src: "/simple-rain" + '/assets/0.m4a',
 				loop: true
 			})
 		);
