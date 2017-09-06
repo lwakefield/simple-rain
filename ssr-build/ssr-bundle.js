@@ -469,8 +469,10 @@ module.exports = __webpack_require__("JkW7");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact__ = __webpack_require__("KM04");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_preact___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_preact__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style__ = __webpack_require__("ZAL5");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_rain_svg__ = __webpack_require__("V73m");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_rain_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__assets_rain_svg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style__ = __webpack_require__("ZAL5");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__style__);
 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -478,6 +480,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 
 
@@ -503,15 +507,11 @@ var Home = function (_Component) {
 	Home.prototype.render = function render() {
 		var _this2 = this;
 
-		var actionText = this.state.paused ? 'Play' : 'Pause';
+		var iconState = this.state.paused ? 'icon-paused' : 'icon-playing';
 		return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'div',
-			{ 'class': __WEBPACK_IMPORTED_MODULE_1__style___default.a.home, onClick: this.togglePlay },
-			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
-				'div',
-				null,
-				actionText
-			),
+			{ 'class': __WEBPACK_IMPORTED_MODULE_2__style___default.a.home, onClick: this.togglePlay },
+			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('img', { src: __WEBPACK_IMPORTED_MODULE_1__assets_rain_svg___default.a, 'class': __WEBPACK_IMPORTED_MODULE_2__style___default.a[iconState] }),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('audio', {
 				ref: function ref(c) {
 					return _this2.audio = c;
@@ -747,11 +747,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
+/***/ "V73m":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9d7ee9e5740ad1fff80d1d4097c76a5f.svg";
+
+/***/ }),
+
 /***/ "ZAL5":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"home":"home__MseGd"};
+module.exports = {"home":"home__MseGd","icon-paused":"icon-paused__2mlVo","icon-playing":"icon-playing__2ByAI"};
 
 /***/ }),
 
