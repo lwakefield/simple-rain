@@ -777,8 +777,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_2__routes_home__["a" /* default */], { path: '/' });
-
 var App = function (_Component) {
 	_inherits(App, _Component);
 
@@ -808,7 +806,7 @@ var App = function (_Component) {
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 				__WEBPACK_IMPORTED_MODULE_1_preact_router__["a" /* Router */],
 				{ onChange: this.handleRoute },
-				_ref
+				__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(__WEBPACK_IMPORTED_MODULE_2__routes_home__["a" /* default */], { path: '' + "/simple-rain/" })
 			)
 		);
 	};
