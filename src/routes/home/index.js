@@ -1,4 +1,6 @@
 import { h, Component } from 'preact';
+import rain from '../../assets/rain.svg'
+
 import style from './style';
 
 export default class Home extends Component {
@@ -12,12 +14,10 @@ export default class Home extends Component {
 	}
 
 	render() {
-		const actionText = this.state.paused
-			? 'Play'
-			: 'Pause';
+		const iconState = this.state.paused ? 'icon-paused' : 'icon-playing'
 		return (
 			<div class={style.home} onClick={this.togglePlay}>
-				<div>{actionText}</div>
+				<img src={rain} class={style[iconState]} />
 				<audio
 					ref={c => this.audio = c}
 					src={`${process.env.PUBLIC_PATH}assets/0.m4a`}

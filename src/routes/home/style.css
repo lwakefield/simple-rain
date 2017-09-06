@@ -7,9 +7,24 @@
 	justify-content: center;
 	align-items: center;
 
-	font-size: 4rem;
+	font-size: 10rem;
 	color: #ddd;
 	cursor: pointer;
 
 	user-select: none;
+}
+
+.home img {
+	max-width: 100%;
+	width: 100%;
+	transition: all 0.3s ease;
+}
+
+.icon-paused {
+	opacity: 0.3;
+	filter: blur(10px) grayscale(100%);
+}
+
+.icon-playing {
+	filter: grayscale(100%);
 }
