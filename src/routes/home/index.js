@@ -20,7 +20,7 @@ export default class Home extends Component {
 				<div>{actionText}</div>
 				<audio
 					ref={c => this.audio = c}
-					src={`${process.env.BASE_URL}/assets/0.m4a`}
+					src={`${process.env.PUBLIC_PATH}assets/0.m4a`}
 					loop
 				/>
 			</div>
