@@ -1,7 +1,7 @@
 {
-  "name": "Preact PWA",
-  "short_name": "Preact PWA",
-  "start_url": "/",
+  "name": "Simple Rain",
+  "short_name": "Simple Rain",
+  "start_url": "/simple-rain",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",

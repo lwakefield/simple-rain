@@ -16,7 +16,7 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
+					<Home path={`${process.env.PUBLIC_PATH}`}/>
 				</Router>
 			</div>
 		);
