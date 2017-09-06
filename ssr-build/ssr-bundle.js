@@ -61,7 +61,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/simple-rain";
+/******/ 	__webpack_require__.p = "/simple-rain/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -516,7 +516,7 @@ var Home = function (_Component) {
 				ref: function ref(c) {
 					return _this2.audio = c;
 				},
-				src: "/simple-rain" + '/assets/0.m4a',
+				src: "/simple-rain/" + 'assets/0.m4a',
 				loop: true
 			})
 		);
