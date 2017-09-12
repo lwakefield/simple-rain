@@ -326,6 +326,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+var _ref = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
+	'h1',
+	null,
+	'Rain...'
+);
+
 var App = function (_Component) {
 	_inherits(App, _Component);
 
@@ -351,6 +357,7 @@ var App = function (_Component) {
 		return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])(
 			'div',
 			{ 'class': __WEBPACK_IMPORTED_MODULE_2__app_css___default.a.home, onClick: this.togglePlay },
+			_ref,
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('img', { src: __WEBPACK_IMPORTED_MODULE_1__assets_rain_svg___default.a, 'class': __WEBPACK_IMPORTED_MODULE_2__app_css___default.a[iconState] }),
 			__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_preact__["h"])('audio', {
 				ref: function ref(c) {
