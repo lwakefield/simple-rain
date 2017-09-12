@@ -15,14 +15,13 @@
 }
 
 .home img {
-	max-width: 100%;
-	width: 100%;
+	width: 32rem;
 	transition: all 0.3s ease;
 }
 
 .icon-paused {
 	opacity: 0.3;
-	filter: blur(10px) grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .icon-playing {

@@ -1,7 +1,7 @@
 {
   "name": "Simple Rain",
   "short_name": "Simple Rain",
-  "start_url": "/simple-rain",
+  "start_url": "/simple-rain/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",

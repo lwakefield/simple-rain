@@ -1,23 +1,28 @@
 import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import rain from '../assets/rain.svg';
 
-import Home from '../routes/home';
+import style from './app.css';
 
 export default class App extends Component {
-	/** Gets fired when the route changes.
-	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-	 *	@param {string} event.url	The newly routed URL
-	 */
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
+	state = { paused: true }
+
+	togglePlay = () => {
+		this.audio.paused
+			? this.audio.play()
+			: this.audio.pause();
+		this.setState({ paused: this.audio.paused });
+	}
 
 	render() {
+		const iconState = this.state.paused ? 'icon-paused' : 'icon-playing';
 		return (
-			<div id="app">
-				<Router onChange={this.handleRoute}>
-					<Home path={`${process.env.PUBLIC_PATH}`}/>
-				</Router>
+			<div class={style.home} onClick={this.togglePlay}>
+				<img src={rain} class={style[iconState]} />
+				<audio
+					ref={c => this.audio = c}
+					src={`${process.env.PUBLIC_PATH}assets/0.m4a`}
+					loop
+				/>
 			</div>
 		);
 	}
